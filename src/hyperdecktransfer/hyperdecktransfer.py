@@ -154,7 +154,9 @@ class App(QMainWindow):
         if err_count == 0:
             QMessageBox.about(self, "Process Complete", "Process has been completed")
         else:
-            QMessageBox.about(self, "We had a problem", str(err_count) + " files did not transfer :(")
+            QMessageBox.about(
+                self, "We had a problem", str(err_count) + " files did not transfer :("
+            )
 
     def clk_btn_reboot(self):
         # Send reboot command to HyperDecks
