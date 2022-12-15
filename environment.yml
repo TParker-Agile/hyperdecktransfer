@@ -1,0 +1,16 @@
+name: hyperdecktransfer
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+     - -e .  # install git checkout of hyperdecktransfer in editable mode
+     # add here only pip-packages that are not available in conda/conda-forge!
+     - PyQt6
+
+     # DEVELOPMENT ONLY PACKAGES
+  - pyinstaller
+  - pip:
+     - pre_commit
