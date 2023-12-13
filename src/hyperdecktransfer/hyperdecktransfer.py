@@ -132,8 +132,6 @@ class App(QMainWindow):
             pass
 
     def clk_btn_transfer(self):
-        tn = telnetlib.Telnet()
-
         err_count = 0
 
         if self.prefs["save_folder"] is not None:
