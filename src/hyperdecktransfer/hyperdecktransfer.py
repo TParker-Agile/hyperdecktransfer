@@ -123,9 +123,9 @@ class App(QMainWindow):
     def clk_btn_toggle_transfer(self):
         # Change whether control signal is sent to deck
         try:
-            self.prefs["transferred"][
-                self.table.selectedIndexes()[0].row()
-            ] = not self.prefs["transferred"][self.table.selectedIndexes()[0].row()]
+            self.prefs["transferred"][self.table.selectedIndexes()[0].row()] = (
+                not self.prefs["transferred"][self.table.selectedIndexes()[0].row()]
+            )
             self.refresh_table()
             self.update_prefs()
         except Exception:

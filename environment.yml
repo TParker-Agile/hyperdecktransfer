@@ -4,14 +4,14 @@ channels:
   - conda-forge
 dependencies:
   - python=3.9
+  - wheel
+  - setuptools
+  - setuptools_scm
   - pip
   - pip:
-     - setuptools
-     - setuptools_scm
-     - wheel
-     - -e .  # install git checkout of hyperdecktransfer in editable mode
      # add here only pip-packages that are not available in conda/conda-forge!
      - PyQt6
+     - -e .  # install git checkout of hyperdecktransfer in editable mode
 
      # DEVELOPMENT ONLY PACKAGES
   - pyinstaller
