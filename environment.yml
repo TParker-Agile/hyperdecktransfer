@@ -6,6 +6,9 @@ dependencies:
   - python=3.9
   - pip
   - pip:
+     - setuptools
+     - setuptools_scm
+     - wheel
      - -e .  # install git checkout of hyperdecktransfer in editable mode
      # add here only pip-packages that are not available in conda/conda-forge!
      - PyQt6

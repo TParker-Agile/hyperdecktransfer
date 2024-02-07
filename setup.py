@@ -1,16 +1,20 @@
 """
-    Setup file for hyperdecktransfer.
+    Setup file for fluidcalcs.
     Use setup.cfg to configure your project.
-
-    This file was generated with PyScaffold 4.0.2.
-    PyScaffold helps you to put up the scaffold of your new Python project.
-    Learn more under: https://pyscaffold.org/
 """
+
 from setuptools import setup
 
 if __name__ == "__main__":
     try:
         setup(use_scm_version={"version_scheme": "no-guess-dev"})
+    except LookupError:
+        print(
+            "\n\nAn error occurred while building the project, "
+            "setuptools-scm may not have been able to detect version."
+            "Setting to 0.0.0 \n\n"
+        )
+        setup(version="0.0.0")
     except:  # noqa
         print(
             "\n\nAn error occurred while building the project, "
